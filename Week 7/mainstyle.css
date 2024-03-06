@@ -1,0 +1,15 @@
+.blue{
+    color:blue
+}
+
+.font{
+    font-family: sans-serif;
+}
+
+#bigger{ 
+    font-size: large;
+}
+
+#align{
+    text-align: center;
+}
