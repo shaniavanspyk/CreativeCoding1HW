@@ -6,32 +6,34 @@
             body {
                 text-align: center;
             }
-        </style>
-         <script>
+           
             function getData()
             {
-                var name = document.getElementById("name").value;
-                var phone = document.getElementById("phone").value;
-    
-                
-    
-                window.alert("your info: " + name + phone);
+                var name = document.getElementById("txtName").value;
+                var phone = document.getElementById("txtPhone").value;
+
+                window.alert("name: " + name + " phone: " + phone);
             }
-            </script>
+        </style>
+
         <title> My Second Page </title>
     </head>
     <body background="c:\Users\Shania Van Spyk\Downloads\topographic-contour-lines-map-seamless-pattern_1284-52862.avif">
        
-        <h3>What is your contact information?</h3>
-        <br>
-        <form style="background-color: bisque">
-            <input type="text" value = " " id="name">name<br>
-            <input type="text" value=" " id="phone">phone<br>
-          
-            <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Info</button>
-        </form>
-        <br>
-       
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" id="txtPhone"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+            </tr>
+        </table>
+        
         <h1> <span> Quiz </span> </h1>
         <p> Fill out the following </p>
         <br>
