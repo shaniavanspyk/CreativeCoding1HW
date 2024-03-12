@@ -1,39 +1,42 @@
 <html>
     <head>
+        <script>
+            function getData() {
+                var document.getElementById("txtName").value;
+                var phone = document.getElementById("txtPhone").value;
+                 // get the new field value
+                 // print out the new field's value
+      document.getElementById("finalResult").innerHTML = "name: " + name + " phone: " + phone;
+            }
+        </script>
         <style>
             span { background-color: crimson;
             }
             body {
                 text-align: center;
             }
-           
-            function getData()
-            {
-                var name = document.getElementById("txtName").value;
-                var phone = document.getElementById("txtPhone").value;
-
-                window.alert("name: " + name + " phone: " + phone);
-            }
         </style>
 
         <title> My Second Page </title>
     </head>
     <body background="c:\Users\Shania Van Spyk\Downloads\topographic-contour-lines-map-seamless-pattern_1284-52862.avif">
-       
+        body>
+        <!-- add another field -->
         <table>
-            <tr>
-                <td>Name</td>
-                <td><input type="text" id="txtName"></td>
-            </tr>
-            <tr>
-                <td>Phone Number</td>
-                <td><input type="text" id="txtPhone"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
-            </tr>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" id="txtName"></td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td><input type="text" id="txtPhone"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+          </tr>
         </table>
-        
+        <div id="finalResult"></div>
+
         <h1> <span> Quiz </span> </h1>
         <p> Fill out the following </p>
         <br>
