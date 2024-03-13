@@ -2,13 +2,12 @@
     <head>
         <script>
             function getData() {
-                var document.getElementById("txtName").value;
-                var phone = document.getElementById("txtPhone").value;
-                 // get the new field value
-                 // print out the new field's value
-      document.getElementById("finalResult").innerHTML = "name: " + name + " phone: " + phone;
+              var name = document.getElementById("txtName").value;
+              var email = document.getElementById("txtEmail").value;
+              // get the new field value
+              // print out the new field's value     document.getElementById("finalResult").innerHTML = "name: " + name + " phone: " + phone;
             }
-        </script>
+          </script>
         <style>
             span { background-color: crimson;
             }
@@ -20,22 +19,7 @@
         <title> My Second Page </title>
     </head>
     <body background="c:\Users\Shania Van Spyk\Downloads\topographic-contour-lines-map-seamless-pattern_1284-52862.avif">
-        body>
-        <!-- add another field -->
-        <table>
-          <tr>
-            <td>Name</td>
-            <td><input type="text" id="txtName"></td>
-          </tr>
-          <tr>
-            <td>Phone Number</td>
-            <td><input type="text" id="txtPhone"></td>
-          </tr>
-          <tr>
-            <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
-          </tr>
-        </table>
-        <div id="finalResult"></div>
+        
 
         <h1> <span> Quiz </span> </h1>
         <p> Fill out the following </p>
@@ -48,11 +32,27 @@
             Favorite Game: <input type="text"><br>
             Favorite Food: <input type="text"><br>
             Favorite Song: <input type="text"><br> 
-            <button type= button > submit </button>
         </form>
+        
         <span><a href="Page3.HTML"> Next Step </a></span> <br>
         <img src="c:\Users\Shania Van Spyk\Downloads\360_F_129715995_gidn0Zki2kG1hruZV0mQGwzvXTvlIqxo.jpg" width="400" hight="300"
-    
+        
+        <!-- add another field -->
+        <table>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" id="txtName"></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" id="txtPhone"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+          </tr>
+        </table>
+        <div id="finalResult"></div>
     </body>
+
 
 </html>
