@@ -60,11 +60,11 @@ align-items: center;
 }
 
 .red-btn{
-    background-color: #d13639;
+    background-color: #282828;
 }
 
 .gray-btn{
-    background-color: #282828;
+    background-color: #d13639;
 }
 
 .btn:hover{
