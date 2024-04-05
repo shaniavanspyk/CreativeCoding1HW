@@ -5,22 +5,22 @@
         function getData()
         {
             var name = document.getElementById("name").value;
-            var phone = document.getElementById("phone").value;
+            var emai = document.getElementById("email").value;
 
             
 
-            window.alert("your info: " + name + phone);
+            window.alert("your info: " + name + email);
         }
         </script>
         <!-- external stylesheet using bootstrap via CDN-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body style="background-color: burlywood;">
+    <body style="background-color: lightblue;">
         <h3>What is your contact information?</h3>
         <br>
-        <form style="background-color: bisque">
+        <form style="background-color: darkblue">
             <input type="text" value = " " id="name">name<br>
-            <input type="text" value=" " id="phone">phone<br>
+            <input type="text" value=" " id="phone">email<br>
           
             <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Info</button>
         </form>
