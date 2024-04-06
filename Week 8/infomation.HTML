@@ -1,28 +1,53 @@
-<html>
-    <title>What is your info</title>
-    <head>
-        <script>
-        function getData()
-        {
-            var name = document.getElementById("name").value;
-            var emai = document.getElementById("email").value;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Information</title>
+    <script>
+        function getData() {
+            var isValid = true;
 
-            
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var terms = document.getElementById("terms");
 
-            window.alert("your info: " + name + email);
+            if (name.value === "") {
+                name.style.borderColor = "red";
+                name.focus();
+                isValid = false;
+            }
+
+          // Repeat for email
+
+            }
+
+            if (!terms.checked && isValid) {
+                terms.style.outlineColor = "red";
+                terms.focus();
+                isValid = false;
+            }
+
+            if (isValid) {
+                window.alert("Form submitted successfully!");
+            }
+
+     else {
+                window.alert("Please fill in all required fields.");
+            }
         }
-        </script>
+    </script>
         <!-- external stylesheet using bootstrap via CDN-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body style="background-color: lightblue;">
+    <body style="background-color: rgb(7, 81, 105);">
         <h3>What is your contact information?</h3>
         <br>
-        <form style="background-color: darkblue">
-            <input type="text" value = " " id="name">name<br>
-            <input type="text" value=" " id="phone">email<br>
+        <form style="background-color: rgb(139, 206, 218)">
+            <input type="text" value = " " id="name" required >name<br>
+            <input type="text" value=" " id="phone" required >email<br>
+            Terms of Agreement:<br>
+            <input type="checkbox" id="terms" required> I agree to the terms 
           
-            <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Info</button>
+            <button id="btnSubmit" class="btn btn-primary" onClick="getData();">Submit My Infomation</button>
         </form>
         <br>
    
