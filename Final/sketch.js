@@ -37,7 +37,7 @@ for (let i = 0; i < cirNum; i++){
   
   //title
   push();
-  translate(width/2,height-90);
+  translate(width/2,height-60);
   noStroke();
   textFont('Arial');
   textSize(30);
